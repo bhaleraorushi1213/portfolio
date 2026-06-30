@@ -40,10 +40,12 @@ const App = () => {
   const [selectedProjectId, setSelectedProjectId] = useState<number | null>(null);
   const [isImagePreviewOpen, setIsImagePreviewOpen] = useState(false);
   const [imagePreview, setImagePreview] = useState("");
+  const [imgType, setImgType] = useState("");
 
   const selectedProject = PROJECTS_DATA.find(p => p.id === selectedProjectId);
 
-  const handleImageClick = (image: string) => {
+  const handleImageClick = (image: string, imgType: string) => {
+    setImgType(imgType)
     setIsImagePreviewOpen(true);
     setImagePreview(image)
   };
@@ -61,7 +63,7 @@ const App = () => {
         </div>
 
         {/* PROFILE SECTION */}
-        <ProfileSectionPage />
+        <ProfileSectionPage onImageClick={handleImageClick} />
 
         {/* TABS */}
         {renderTabsSection(activeTab, setActiveTab)}
@@ -94,7 +96,11 @@ const App = () => {
       )}
 
       {isImagePreviewOpen && (
-        <ImagePreview image={imagePreview} onClose={() => setIsImagePreviewOpen(!isImagePreviewOpen)} />
+        <ImagePreview
+          image={imagePreview}
+          onClose={() => setIsImagePreviewOpen(!isImagePreviewOpen)}
+          imgType={imgType}
+        />
       )}
     </div>
   )

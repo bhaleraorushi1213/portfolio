@@ -2,7 +2,7 @@ import { PROJECTS_DATA } from "../lib/utils";
 
 interface ProjectsTabProps {
   onProjectClick: (id: number) => void,
-  onImageClick: (url: string) => void
+  onImageClick: (url: string, imgType: string) => void
 }
 
 const ProjectsTab = ({ onProjectClick, onImageClick }: ProjectsTabProps) => {
@@ -15,7 +15,7 @@ const ProjectsTab = ({ onProjectClick, onImageClick }: ProjectsTabProps) => {
         >
           <div
             className="h-40 w-full overflow-hidden border-b border-gray-100 bg-gray-50 cursor-pointer"
-            onClick={() => onImageClick(project.image)}
+            onClick={() => onImageClick(project.image, "project")}
           >
             <img
               src={project.image}

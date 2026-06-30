@@ -15,7 +15,7 @@ interface ProjectModalProps {
     date: string,
   },
   onClose: () => void,
-  onImageClick: (url: string) => void
+  onImageClick: (url: string, imgType: string) => void
 }
 
 const ProjectModal = ({ project, onClose, onImageClick }: ProjectModalProps) => {
@@ -29,10 +29,10 @@ const ProjectModal = ({ project, onClose, onImageClick }: ProjectModalProps) => 
       <div
         className="bg-white rounded-2xl w-full max-w-150 max-h-[90vh] flex flex-col shadow-xl scroll-container"
         onClick={(e) => e.stopPropagation()}
-        // style={{
-        //   scrollBehavior: 'auto',
-        //   scrollbarWidth: 'thin'
-        // }}
+      // style={{
+      //   scrollBehavior: 'auto',
+      //   scrollbarWidth: 'thin'
+      // }}
       >
         {/* MODAL HEADER */}
         <div className="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-100 flex items-center justify-between p-4 z-10">
@@ -74,7 +74,9 @@ const ProjectModal = ({ project, onClose, onImageClick }: ProjectModalProps) => 
             </div>
 
             {/* Media */}
-            <div className="rounded-2xl overflow-hidden border border-gray-200 bg-gray-50 cursor-pointer" onClick={() => onImageClick(project.image)}>
+            <div
+              className="rounded-2xl overflow-hidden border border-gray-200 bg-gray-50 cursor-pointer"
+              onClick={() => onImageClick(project.image, "project")}>
               <img src={project.image} className="w-full h-auto max-h-100 object-cover" alt={project.title} />
             </div>
           </div>

@@ -3,13 +3,17 @@ import { PROFILE_DATA } from "../lib/utils";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import ProfileImg from "../assets/profile.png";
+import Resume from "../assets/resume.pdf"
 
-const ProfileSectionPage = () => {
+const ProfileSectionPage = ({onImageClick}: {onImageClick: (url: string, imgType: string) => void}) => {
   return (
     <div className="px-4 sm:px-6 relative">
       {/* PROFILE PICTURE*/}
       <div className="flex justify-between items-start mb-4">
-        <div className="relative -mt-16 rounded-full border-4 border-white overflow-hidden w-32 h-32 bg-white">
+        <div
+          onClick={() => onImageClick(ProfileImg, "profile")}
+          className="relative -mt-16 rounded-full border-4 border-white overflow-hidden w-32 h-32 bg-white cursor-pointer"
+        >
           <img
             src={ProfileImg}
             alt="Profile Avatar"
@@ -19,20 +23,24 @@ const ProfileSectionPage = () => {
 
         {/* ACTION Buttons  */}
         <div className="pt-3 flex gap-2">
-          <button
-            onClick={() => { }}
-            className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-gray-300 font-medium text-sm hover:bg-gray-100 transition-colors cursor-pointer"
-          >
-            <Mail size={16} />
-            Message
-          </button>
-          <button
-            onClick={() => { }}
-            className="px-5 py-1.5 rounded-full flex items-center gap-2 bg-primary text-white font-medium text-sm hover:bg-primary/80 transition-colors cursor-pointer"
-          >
-            Resume
-            <Download size={16} />
-          </button>
+          <a href="mailto:bhaleraorushi1213@gmail.com" target="_blank">
+            <button
+              className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-gray-300 font-medium text-sm hover:bg-gray-100 transition-colors cursor-pointer"
+            >
+              <Mail size={16} />
+              Hire Me
+            </button>
+          </a>
+          <a href={Resume} download="Rushikesh_Bhalerao_Resume.pdf">
+
+            <button
+              onClick={() => { }}
+              className="px-5 py-1.5 rounded-full flex items-center gap-2 bg-primary text-white font-medium text-sm hover:bg-primary/80 transition-colors cursor-pointer"
+            >
+              Resume
+              <Download size={16} />
+            </button>
+          </a>
         </div>
       </div>
       {/* NAME & BIO */}
