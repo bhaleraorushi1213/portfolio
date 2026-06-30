@@ -60,15 +60,15 @@ const ProfileSectionPage = ({onImageClick}: {onImageClick: (url: string, imgType
         </div>
         <div className="flex items-center gap-1.5">
           <BsGithub size={16} />
-          <a href={PROFILE_DATA.linkUrl} className="text-primary hover:underline">{PROFILE_DATA.link}</a>
+          <a href={PROFILE_DATA.linkUrl} target="_blank" className="text-primary hover:underline">{PROFILE_DATA.link}</a>
         </div>
         <div className="flex items-center gap-1.5">
           <FaLinkedinIn size={16} />
-          <a href={PROFILE_DATA.linkedinUrl} className="text-primary hover:underline">{PROFILE_DATA.linkedin}</a>
+          <a href={PROFILE_DATA.linkedinUrl} target="_blank" className="text-primary hover:underline">{PROFILE_DATA.linkedin}</a>
         </div>
         <div className="flex items-center gap-1.5">
           <Mail size={16} />
-          <a href={`mailto:${PROFILE_DATA.gmail}`} className="text-primary hover:underline">{PROFILE_DATA.gmail}</a>
+          <a href={`mailto:${PROFILE_DATA.gmail}`} target="_blank" className="text-primary hover:underline">{PROFILE_DATA.gmail}</a>
         </div>
       </div>
     </div>

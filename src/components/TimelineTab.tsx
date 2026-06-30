@@ -15,7 +15,7 @@ interface TimelineTabProps {
 
 const TimelineTab = ({ items, icon: Icon, title }: TimelineTabProps) => {
   return (
-    <div className="pt-2">
+    <div className="pt-2 p-4 sm:px-6 ">
       <h2 className="text-xl font-display font-bold mb-6">{title}</h2>
       <div className="space-y-0">
         {items.map((item, index) => (

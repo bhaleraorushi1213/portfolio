@@ -4,7 +4,7 @@ import ConnecTableImg from "../assets/connectable-img.png";
 export const PROFILE_DATA = {
 	name: "Rushikesh Subhash Bhalerao",
 	handle: "@rushikesh_bhalerao1213",
-	bio: "Full-Stack Software Engineer building scalable web applications. React.js | Node.js | WebSocket APIs. Passionate about clean code and modern system design.",
+	bio: "Full-Stack Software Engineer with production experience designing and shipping scalable web applications across the full stack React.js, Next.js, Node.js, WebSocket APIs, and MongoDB. Proven ability to independently architect features, optimize system performance, and collaborate cross-functionally in fast-paced environments. Targeting SDE / Full-Stack roles at high-growth engineering organizations.",
 	location: "Chh. Sambhajinagar, MH, India",
 	link: "github.com/bhaleraorushi1213",
 	linkUrl: "https://github.com/bhaleraorushi1213",
@@ -46,15 +46,23 @@ export const PROJECTS_DATA = [
 export const SKILLS_DATA = [
 	{
 		category: "Languages",
-		skills: ["JavaScript", "TypeScript", "Java", "HTML/CSS"],
+		skills: ["JavaScript (ES6+)", "TypeScript", "Java", "HTML5", "CSS3", "SQL"],
 	},
 	{
 		category: "Frontend",
-		skills: ["React.js", "Next.js", "Tailwind CSS", "Redux", "Bootstrap", "Zustand"],
+		skills: ["React.js", "Next.js", "Redux Toolkit", "Zustand", "Tailwind CSS", "Bootstrap"],
 	},
 	{
-		category: "Backend",
-		skills: ["Node.js", "Express", "MongoDB", "WebSocket"],
+		category: "Backend & APIs",
+		skills: ["Node.js", "Express.js", "REST API Design", "WebSocket/Socket.IO", "JWT Auth"],
+	},
+	{
+		category: "Databases & Infra",
+		skills: ["MongoDB (Mongoose)", "MySQL", "Cloudinary", "GitHub Actions"],
+	},
+	{
+		category: "Tools",
+		skills: ["Git", "GitHub", "Postman", "VS Code", "dnd-kit"],
 	},
 ];
 

@@ -69,7 +69,7 @@ const App = () => {
         {renderTabsSection(activeTab, setActiveTab)}
 
         {/* TABS CONTENT */}
-        <div className="p-4 sm:px-6 mt-2">
+        <div className="mt-2">
           {activeTab === 'projects' && (
             <ProjectsTab
               onProjectClick={setSelectedProjectId}
