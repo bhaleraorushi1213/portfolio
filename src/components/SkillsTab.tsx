@@ -3,7 +3,7 @@ import { SKILLS_DATA } from "../lib/utils"
 
 const SkillsTab = () => {
   return (
-    <div className="space-y-8 pt-2 ">
+    <div className="space-y-1">
       {SKILLS_DATA.map((section, idx) => (
         <div key={idx} className="border-b border-gray-200 p-4 sm:px-6 ">
           <div key={idx}>
