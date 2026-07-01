@@ -22,10 +22,10 @@ const ProfileSectionPage = ({onImageClick}: {onImageClick: (url: string, imgType
         </div>
 
         {/* ACTION Buttons  */}
-        <div className="pt-3 flex gap-2">
+        <div className="pt-3 flex gap-1 md:gap-2 justify-end">
           <a href="mailto:bhaleraorushi1213@gmail.com" target="_blank">
             <button
-              className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-gray-300 font-medium text-sm hover:bg-gray-100 transition-colors cursor-pointer"
+              className="flex items-center gap-2 px-3 md:px-4 py-1.5 rounded-full border border-gray-300 font-medium text-sm hover:bg-gray-100 transition-colors cursor-pointer"
             >
               <Mail size={16} />
               Hire Me
@@ -35,7 +35,7 @@ const ProfileSectionPage = ({onImageClick}: {onImageClick: (url: string, imgType
 
             <button
               onClick={() => { }}
-              className="px-5 py-1.5 rounded-full flex items-center gap-2 bg-primary text-white font-medium text-sm hover:bg-primary/80 transition-colors cursor-pointer"
+              className="px-4 md:px-5 py-1.5 rounded-full flex items-center gap-2 bg-primary text-white font-medium text-sm hover:bg-primary/80 transition-colors cursor-pointer"
             >
               Resume
               <Download size={16} />
