@@ -41,7 +41,6 @@ export const PROJECTS_DATA = [
 		date: "June 2026",
 	},
 ];
-// "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?auto=format&fit=crop&q=80&w=600",
 
 export const SKILLS_DATA = [
 	{

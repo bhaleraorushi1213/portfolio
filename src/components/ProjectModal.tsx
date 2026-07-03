@@ -1,6 +1,7 @@
 import { ExternalLink, X } from "lucide-react";
 import { PROFILE_DATA } from "../lib/utils";
 import { BsGithub } from "react-icons/bs";
+import ProfileImg from "../assets/profile.png";
 
 interface ProjectModalProps {
   project: {
@@ -48,7 +49,7 @@ const ProjectModal = ({ project, onClose, onImageClick }: ProjectModalProps) => 
           {/* POST HEADER (AUTHOR) */}
           <div className="flex gap-3 mb-4">
             <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-100 shrink-0 border border-gray-100">
-              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200" className="w-full h-full object-cover" alt="Author" />
+              <img src={ProfileImg} className="w-full h-full object-cover" alt="Author" />
             </div>
             <div>
               <div className="flex items-center gap-1.5">
