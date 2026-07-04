@@ -4,7 +4,10 @@ import ConnecTableImg from "../assets/connectable-img.png";
 export const PROFILE_DATA = {
 	name: "Rushikesh Subhash Bhalerao",
 	handle: "@rushikesh_bhalerao1213",
-	bio: "Full-Stack Software Engineer with production experience designing and shipping scalable web applications across the full stack React.js, Next.js, Node.js, WebSocket APIs, and MongoDB. Proven ability to independently architect features, optimize system performance, and collaborate cross-functionally in fast-paced environments. Targeting SDE / Full-Stack roles at high-growth engineering organizations.",
+	role: "Full-Stack Software Engineer",
+	// Cycled by the terminal intro's typewriter animation — keep to 3, more starts to feel busy
+	roles: ["Frontend Developer", "Full-Stack Developer", "React Developer"],
+	bio: "Full-Stack Software Engineer with production experience designing and shipping scalable web applications across the full stack — React.js, Next.js, Node.js, WebSocket APIs, and MongoDB. Proven ability to independently architect features, optimize system performance, and collaborate cross-functionally in fast-paced environments. Targeting SDE / Full-Stack roles at high-growth engineering organizations.",
 	location: "Chh. Sambhajinagar, MH, India",
 	link: "github.com/bhaleraorushi1213",
 	linkUrl: "https://github.com/bhaleraorushi1213",
@@ -12,6 +15,14 @@ export const PROFILE_DATA = {
 	linkedinUrl: "https://linkedin.com/in/rushikesh-bhalerao1213",
 	gmail: "bhaleraorushi1213@gmail.com",
 };
+
+// Pulled out of the project prose so recruiters can skim the impact in ~2 seconds.
+export const STATS_DATA = [
+	{ label: "message latency", value: 100, suffix: "ms", prefix: "<" },
+	{ label: "advisor workload reduced", value: 40, suffix: "%", prefix: "" },
+	{ label: "production apps shipped", value: 2, suffix: "", prefix: "" },
+	{ label: "critical post-launch defects", value: 0, suffix: "", prefix: "" },
+];
 
 export const PROJECTS_DATA = [
 	{
@@ -87,19 +98,17 @@ export const EDUCATION_DATA = [
 		title: "Bachelor of Engineering in Computer Engineering",
 		subtitle: "Savitribai Phule Pune University (SPPU)",
 		date: "Graduated June 2024",
-		description:
-			"CGPA: 7.63 / 10.0. Pune, Maharashtra.",
+		description: "CGPA: 7.63 / 10.0. Pune, Maharashtra.",
 	},
 	{
 		title: "Class XII (CBSE)",
 		subtitle: "Jawahar Navodaya Vidyalaya",
 		date: "Graduated July 2020",
-		description:
-			"71.4%. Chh. Sambhajinagar, Maharashtra.",
+		description: "71.4%. Chh. Sambhajinagar, Maharashtra.",
 	},
 ];
 
-type TabId = 'projects' | 'experience' | 'skills' | 'education';
+type TabId = "projects" | "experience" | "skills" | "education";
 
 export const TABS: { id: TabId; label: string }[] = [
 	{ id: "projects", label: "Projects" },
