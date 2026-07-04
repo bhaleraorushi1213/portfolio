@@ -7,7 +7,7 @@ export const PROFILE_DATA = {
 	role: "Full-Stack Software Engineer",
 	// Cycled by the terminal intro's typewriter animation — keep to 3, more starts to feel busy
 	roles: ["Frontend Developer", "Full-Stack Developer", "React Developer"],
-	bio: "Full-Stack Software Engineer with production experience designing and shipping scalable web applications across the full stack — React.js, Next.js, Node.js, WebSocket APIs, and MongoDB. Proven ability to independently architect features, optimize system performance, and collaborate cross-functionally in fast-paced environments. Targeting SDE / Full-Stack roles at high-growth engineering organizations.",
+	bio: "Full-Stack Software Engineer with production experience designing and shipping scalable web applications across the full stack — React.js, Next.js, Node.js, WebSocket APIs, and MongoDB. Proven ability to independently architect features, optimize system performance, and collaborate cross-functionally in fast-paced environments. Targeting Frontend / MERN-Stack roles at high-growth engineering organizations.",
 	location: "Chh. Sambhajinagar, MH, India",
 	link: "github.com/bhaleraorushi1213",
 	linkUrl: "https://github.com/bhaleraorushi1213",
@@ -19,7 +19,6 @@ export const PROFILE_DATA = {
 // Pulled out of the project prose so recruiters can skim the impact in ~2 seconds.
 export const STATS_DATA = [
 	{ label: "message latency", value: 100, suffix: "ms", prefix: "<" },
-	{ label: "advisor workload reduced", value: 40, suffix: "%", prefix: "" },
 	{ label: "production apps shipped", value: 2, suffix: "", prefix: "" },
 	{ label: "critical post-launch defects", value: 0, suffix: "", prefix: "" },
 ];
@@ -31,7 +30,7 @@ export const PROJECTS_DATA = [
 		description:
 			"A real-time chat application with sub-100ms message delivery...",
 		fullDescription:
-			"A full-stack real-time messaging system built with React.js, Node.js, and Socket.IO, achieving sub-100ms message delivery latency under local load tests. Features typing indicators, unread badge counts, message reactions, reply/forward/delete/pin, infinite-scroll pagination, read receipts, online/last-seen status, voice messages, and offline message queuing. Socket subscriptions are split into a global layer (badge counts, presence) and a local layer (active-chat events) to reduce unnecessary event fan-out and improve client-side render efficiency.",
+			"A full-stack real-time messaging system built with React.js, Node.js, and Socket.IO, achieving sub-100ms message delivery latency under local load tests. Features typing indicators, unread badge counts, message reactions, reply/forward/delete, infinite-scroll pagination, online/last-seen status, and offline message queuing. Socket subscriptions are split into a global layer (badge counts, presence) and a local layer (active-chat events) to reduce unnecessary event fan-out and improve client-side render efficiency.",
 		image: ConnecTableImg,
 		tags: ["React.js", "Node.js", "Express.js", "Socket.IO", "MongoDB", "JWT"],
 		githubUrl: "https://github.com/bhaleraorushi1213/ConnecTable",
@@ -44,7 +43,7 @@ export const PROJECTS_DATA = [
 		description:
 			"A Kanban-style job application tracker with drag-and-drop...",
 		fullDescription:
-			"A full-stack Kanban-style job application tracker built with Next.js, TypeScript, and MongoDB, enabling users to create, update, and delete job applications across pipeline stages (Wishlist, Applied, Interviewing, Offer, Rejected). Features drag-and-drop (dnd-kit) with optimistic UI updates using React 19's useOptimistic and useTransition, secure session-based authentication with Better-Auth enforcing user-scoped data access across all API routes, and a multi-step slide-over sheet panel built with Framer Motion. Resolved complex z-index stacking context conflicts introduced by Framer Motion's layout prop to enable correct drag-layer rendering across dynamic columns.",
+			"A full-stack Kanban-style job application tracker built with Next.js, TypeScript, and MongoDB, enabling users to create, update, and delete job applications across pipeline stages (Wishlist, Applied, Interviewing, Offer, Rejected). Features drag-and-drop (dnd-kit) with optimistic UI updates, secure session-based authentication with Better-Auth enforcing user-scoped data access across all API routes, and a multi-step slide-over sheet panel built with Framer Motion. Resolved complex z-index stacking context conflicts introduced by Framer Motion's layout prop to enable correct drag-layer rendering across dynamic columns.",
 		image: CareerPathImg,
 		tags: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "Better-Auth", "dnd-kit"],
 		githubUrl: "https://github.com/bhaleraorushi1213/career-path",
